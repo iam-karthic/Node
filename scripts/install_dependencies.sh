@@ -1,3 +1,4 @@
 #!/bin/bash
 cd /home/ubuntu/qa/node/
-sudo apt update
+echo stopping node
+sudo kill -9 `lsof -t -i:8000`
